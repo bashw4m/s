@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>StudyBody | Features</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f4f7fb;
+}
+
+/* HEADER */
+
+header{
+    background:#1e3a8a;
+    padding:20px 60px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    color:white;
+    font-size:30px;
+    font-weight:bold;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:25px;
+    font-size:17px;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#93c5fd;
+}
+
+/* HERO */
+
+.hero{
+    background:linear-gradient(135deg,#2563eb,#1e40af);
+    color:white;
+    text-align:center;
+    padding:100px 20px;
+}
+
+.hero h1{
+    font-size:60px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:22px;
+    max-width:800px;
+    margin:auto;
+    line-height:1.7;
+}
+
+/* FEATURES */
+
+.features{
+    padding:80px 60px;
+}
+
+.features-title{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.features-title h2{
+    font-size:42px;
+    color:#1e3a8a;
+}
+
+.feature-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.feature-card{
+    background:white;
+    padding:35px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.feature-card:hover{
+    transform:translateY(-10px);
+}
+
+.feature-card h3{
+    color:#2563eb;
+    margin-bottom:15px;
+    font-size:24px;
+}
+
+.feature-card p{
+    color:#555;
+    line-height:1.8;
+}
+
+/* EXTRA SECTION */
+
+.extra{
+    padding:80px 60px;
+    background:white;
+    text-align:center;
+}
+
+.extra h2{
+    font-size:40px;
+    color:#1e3a8a;
+    margin-bottom:20px;
+}
+
+.extra p{
+    max-width:850px;
+    margin:auto;
+    font-size:19px;
+    line-height:1.8;
+    color:#444;
+}
+
+/* FOOTER */
+
+footer{
+    background:#111827;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+    header{
+        flex-direction:column;
+    }
+
+    nav{
+        margin-top:15px;
+    }
+
+    .hero h1{
+        font-size:40px;
+    }
+
+    .hero p{
+        font-size:18px;
+    }
+
+}
+
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+
+<header>
+
+<div class="logo">StudyBody</div>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="features.html">Features</a>
+    <a href="about.html">About</a>
+    <a href="courses.html">Courses</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+</header>
+
+<!-- HERO -->
+
+<section class="hero">
+
+<h1>Powerful Features</h1>
+
+<p>
+StudyBody provides modern educational tools that help students
+study smarter, collaborate with classmates, and improve their
+academic success.
+</p>
+
+</section>
+
+<!-- FEATURES -->
+
+<section class="features">
+
+<div class="features-title">
+    <h2>Platform Features</h2>
+</div>
+
+<div class="feature-grid">
+
+<div class="feature-card">
+    <h3>Online Learning</h3>
+    <p>
+    Access high-quality video lessons, tutorials,
+    quizzes, and assignments anytime and anywhere.
+    </p>
+</div>
+
+<div class="feature-card">
+    <h3>Study Groups</h3>
+    <p>
+    Join online study communities where students can
+    share ideas, notes, and solve problems together.
+    </p>
+</div>
+
+<div class="feature-card">
+    <h3>Smart Scheduling</h3>
+    <p>
+    Organize your daily tasks and study sessions using
+    reminders and personalized learning schedules.
+    </p>
+</div>
+
+<div class="feature-card">
+    <h3>Progress Tracking</h3>
+    <p>
+    Monitor your completed lessons, grades,
+    and learning performance in real time.
+    </p>
+</div>
+
+<div class="feature-card">
+    <h3>Live Classes</h3>
+    <p>
+    Attend live online classes and communicate directly
+    with teachers and instructors.
+    </p>
+</div>
+
+<div class="feature-card">
+    <h3>Certificate System</h3>
+    <p>
+    Earn digital certificates after completing
+    professional courses and learning programs.
+    </p>
+</div>
+
+</div>
+
+</section>
+
+<!-- EXTRA -->
+
+<section class="extra">
+
+<h2>Why Choose StudyBody?</h2>
+
+<p>
+StudyBody combines modern technology with professional education
+to create a complete online learning environment. Students can
+learn from anywhere, connect with teachers, manage assignments,
+and improve their skills through interactive educational tools.
+</p>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+<p>© 2026 studybody Platform</p>
+</footer>
+
+</body>
+</html>

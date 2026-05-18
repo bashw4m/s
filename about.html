@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>StudyBody | About</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f4f7fb;
+    color:#222;
+}
+
+/* HEADER */
+
+header{
+    background:#1e3a8a;
+    padding:20px 60px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    color:white;
+    font-size:30px;
+    font-weight:bold;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:25px;
+    font-size:17px;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#93c5fd;
+}
+
+/* HERO */
+
+.hero{
+    background:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url('1.jfif');
+
+    background-size:cover;
+    background-position:center;
+
+    height:60vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+
+    color:white;
+    padding:20px;
+}
+
+.hero h1{
+    font-size:60px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:22px;
+    max-width:750px;
+    line-height:1.7;
+}
+
+/* ABOUT SECTION */
+
+.about{
+    padding:80px 60px;
+    display:flex;
+    gap:50px;
+    align-items:center;
+    flex-wrap:wrap;
+}
+
+.about img{
+    width:450px;
+    border-radius:20px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.2);
+}
+
+.about-text{
+    flex:1;
+}
+
+.about-text h2{
+    font-size:42px;
+    color:#1e3a8a;
+    margin-bottom:20px;
+}
+
+.about-text p{
+    font-size:19px;
+    line-height:1.9;
+    margin-bottom:20px;
+    color:#444;
+}
+
+/* MISSION */
+
+.mission{
+    background:white;
+    padding:80px 60px;
+    text-align:center;
+}
+
+.mission h2{
+    font-size:42px;
+    color:#1e3a8a;
+    margin-bottom:20px;
+}
+
+.mission p{
+    max-width:850px;
+    margin:auto;
+    font-size:19px;
+    line-height:1.8;
+    color:#555;
+}
+
+/* TEAM */
+
+.team{
+    padding:80px 60px;
+}
+
+.team-title{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.team-title h2{
+    font-size:42px;
+    color:#1e3a8a;
+}
+
+.team-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+.team-card{
+    background:white;
+    padding:35px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    text-align:center;
+    transition:0.3s;
+}
+
+.team-card:hover{
+    transform:translateY(-10px);
+}
+
+.team-card h3{
+    color:#2563eb;
+    margin-bottom:10px;
+}
+
+.team-card p{
+    color:#555;
+    line-height:1.7;
+}
+
+/* FOOTER */
+
+footer{
+    background:#111827;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+    header{
+        flex-direction:column;
+    }
+
+    nav{
+        margin-top:15px;
+    }
+
+    .hero h1{
+        font-size:42px;
+    }
+
+    .hero p{
+        font-size:18px;
+    }
+
+    .about{
+        justify-content:center;
+    }
+
+    .about img{
+        width:100%;
+    }
+
+}
+
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+
+<header>
+
+<div class="logo">StudyBody</div>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="features.html">Features</a>
+    <a href="about.html">About</a>
+    <a href="courses.html">Courses</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+</header>
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div>
+
+<h1>About StudyBody</h1>
+
+<p>
+A modern online learning platform created to help students
+learn smarter, stay organized, and achieve academic success.
+</p>
+
+</div>
+
+</section>
+
+<!-- ABOUT -->
+
+<section class="about">
+
+<img src="2.jfif" alt="Students">
+
+<div class="about-text">
+
+<h2>Who We Are</h2>
+
+<p>
+StudyBody is a professional educational platform designed for
+students, teachers, and learners around the world. Our goal is
+to make education easier, smarter, and more interactive through
+modern digital technology.
+</p>
+
+<p>
+The platform offers online courses, live classes, study groups,
+assignment management systems, and smart learning tools that help
+students improve their performance and productivity.
+</p>
+
+<p>
+We believe that every student deserves access to high-quality
+education and modern learning resources regardless of location.
+</p>
+
+</div>
+
+</section>
+
+<!-- MISSION -->
+
+<section class="mission">
+
+<h2>Our Mission</h2>
+
+<p>
+Our mission is to transform online education by providing
+students with innovative learning experiences, professional
+study tools, and collaborative educational communities.
+StudyBody focuses on helping learners gain knowledge,
+improve skills, and prepare for future academic and career success.
+</p>
+
+</section>
+
+<!-- TEAM -->
+
+<section class="team">
+
+<div class="team-title">
+    <h2>Our Team</h2>
+</div>
+
+<div class="team-grid">
+
+<div class="team-card">
+    <h3>Professional Teachers</h3>
+    <p>
+    Experienced educators who provide quality
+    lessons and guidance for students.
+    </p>
+</div>
+
+<div class="team-card">
+    <h3>Developers</h3>
+    <p>
+    Creative developers building modern and
+    user-friendly educational systems.
+    </p>
+</div>
+
+<div class="team-card">
+    <h3>Student Community</h3>
+    <p>
+    A growing community of students learning,
+    collaborating, and succeeding together.
+    </p>
+</div>
+
+</div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+<p>© 2026 studybody Platform</p>
+
+</footer>
+
+</body>
+</html>
