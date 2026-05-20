@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>StudyBody | Courses</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f4f7fb;
+}
+
+/* HEADER */
+
+header{
+    background:#1e3a8a;
+    padding:20px 60px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    color:white;
+    font-size:30px;
+    font-weight:bold;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:25px;
+    font-size:17px;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#93c5fd;
+}
+
+/* HERO */
+
+.hero{
+    background:linear-gradient(135deg,#2563eb,#1d4ed8);
+    color:white;
+    text-align:center;
+    padding:100px 20px;
+}
+
+.hero h1{
+    font-size:60px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:22px;
+    max-width:800px;
+    margin:auto;
+    line-height:1.8;
+}
+
+/* COURSES */
+
+.courses{
+    padding:80px 60px;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.section-title h2{
+    font-size:42px;
+    color:#1e3a8a;
+}
+
+.course-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.course-card{
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.course-card:hover{
+    transform:translateY(-10px);
+}
+
+.course-card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.course-content{
+    padding:25px;
+}
+
+.course-content h3{
+    color:#2563eb;
+    margin-bottom:15px;
+    font-size:25px;
+}
+
+.course-content p{
+    color:#555;
+    line-height:1.8;
+    margin-bottom:20px;
+}
+
+.btn{
+    display:inline-block;
+    background:#2563eb;
+    color:white;
+    text-decoration:none;
+    padding:12px 25px;
+    border-radius:10px;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#1d4ed8;
+}
+
+/* EXTRA SECTION */
+
+.extra{
+    background:white;
+    padding:80px 60px;
+    text-align:center;
+}
+
+.extra h2{
+    font-size:42px;
+    color:#1e3a8a;
+    margin-bottom:20px;
+}
+
+.extra p{
+    max-width:850px;
+    margin:auto;
+    font-size:19px;
+    line-height:1.8;
+    color:#555;
+}
+
+/* FOOTER */
+
+footer{
+    background:#111827;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+    header{
+        flex-direction:column;
+    }
+
+    nav{
+        margin-top:15px;
+    }
+
+    .hero h1{
+        font-size:42px;
+    }
+
+    .hero p{
+        font-size:18px;
+    }
+
+}
+
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+
+<header>
+
+<div class="logo">StudyBody</div>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="features.html">Features</a>
+    <a href="about.html">About</a>
+    <a href="courses.html">Courses</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+</header>
+
+<!-- HERO -->
+
+<section class="hero">
+
+<h1>Our Courses</h1>
+
+<p>
+Explore professional online courses designed to improve
+your academic skills, creativity, and future career opportunities.
+</p>
+
+</section>
+
+<!-- COURSES -->
+
+<section class="courses">
+
+<div class="section-title">
+    <h2>Popular Courses</h2>
+</div>
+
+<div class="course-grid">
+
+<!-- COURSE 1 -->
+
+<div class="course-card">
+
+<img src="1c.jfif" alt="Web Development">
+
+<div class="course-content">
+
+<h3>Web Development</h3>
+
+<p>
+Learn HTML, CSS, JavaScript, responsive design,
+and modern website development techniques.
+</p>
+
+<a href="#" class="btn">Enroll Now</a>
+
+</div>
+
+</div>
+
+<!-- COURSE 2 -->
+
+<div class="course-card">
+
+<img src="2c.jfif" alt="Biology">
+
+<div class="course-content">
+
+<h3>Biology</h3>
+
+<p>
+Study genetics, anatomy, ecology,
+reproduction, and human biology in depth.
+</p>
+
+<a href="#" class="btn">Enroll Now</a>
+
+</div>
+
+</div>
+
+<!-- COURSE 3 -->
+
+<div class="course-card">
+
+<img src="3c.jfif" alt="Mathematics">
+
+<div class="course-content">
+
+<h3>Mathematics</h3>
+
+<p>
+Master algebra, geometry, calculus,
+statistics, and problem-solving skills.
+</p>
+
+<a href="#" class="btn">Enroll Now</a>
+
+</div>
+
+</div>
+
+<!-- COURSE 4 -->
+
+<div class="course-card">
+
+<img src="4c.jfif" alt="English">
+
+<div class="course-content">
+
+<h3>English Writing</h3>
+
+<p>
+Improve grammar, communication,
+essay writing, and vocabulary skills.
+</p>
+
+<a href="#" class="btn">Enroll Now</a>
+
+</div>
+
+</div>
+
+<!-- COURSE 5 -->
+
+<div class="course-card">
+
+<img src="5c.jfif" alt="Programming">
+
+<div class="course-content">
+
+<h3>Programming</h3>
+
+<p>
+Learn coding fundamentals, Python,
+software development, and algorithms.
+</p>
+
+<a href="#" class="btn">Enroll Now</a>
+
+</div>
+
+</div>
+
+<!-- COURSE 6 -->
+
+<div class="course-card">
+
+<img src="6c.jfif" alt="Business">
+
+<div class="course-content">
+
+<h3>Business & Marketing</h3>
+
+<p>
+Understand entrepreneurship,
+digital marketing, and business strategies.
+</p>
+
+<a href="#" class="btn">Enroll Now</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- EXTRA -->
+
+<section class="extra">
+
+<h2>Why Learn With StudyBody?</h2>
+
+<p>
+StudyBody provides professional online learning experiences
+through interactive lessons, practical assignments, live classes,
+and expert instructors. Students can improve their skills,
+track progress, and prepare for future careers using modern
+educational technology.
+</p>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+<p>© 2026 studybody Platform</p>
+
+</footer>
+
+</body>
+</html>
